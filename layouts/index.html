@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Persönlicher Blog</title>
+    {{ $css := resources.Get "css/main.css" }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <h1>Persönlicher Blog</h1>
+
+    {{ .Content }}
+
+<h2>Reiseberichte</h2>
+
+{{ range where .Site.RegularPages "Section" "reiseberichte" }}
+<article>
+    <h3>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="date">{{ index (slice "Januar" "Februar" "März" "April" "Mai" "Juni" "Juli" "August" "September" "Oktober" "November" "Dezember") (sub .Date.Month 1) }} {{ .Date.Year }}</span>
+    </h3>
+</article>
+{{ end }}
+
+<h2>Projekte</h2>
+
+{{ range where .Site.RegularPages "Section" "projekte" }}
+<article>
+    <h3>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="date">{{ index (slice "Januar" "Februar" "März" "April" "Mai" "Juni" "Juli" "August" "September" "Oktober" "November" "Dezember") (sub .Date.Month 1) }} {{ .Date.Year }}</span>
+    </h3>
+</article>
+{{ end }}
+
+<h2>Sonstiges</h2>
+
+{{ range where .Site.RegularPages "Section" "sonstiges" }}
+<article>
+    <h3>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="date">{{ index (slice "Januar" "Februar" "März" "April" "Mai" "Juni" "Juli" "August" "September" "Oktober" "November" "Dezember") (sub .Date.Month 1) }} {{ .Date.Year }}</span>
+    </h3>
+</article>
+{{ end }}
+</body>
+</html>

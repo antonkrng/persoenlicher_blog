@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }}</title>
+    {{ $css := resources.Get "css/main.css" }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>{{ .Title }}</h1>
+
+    <p>{{ .Date.Format "02.01.2006" }}</p>
+
+    {{ .Content }}
+
+    <p><a href="/">Zurück zur Startseite</a></p>
+</body>
+</html>
+
