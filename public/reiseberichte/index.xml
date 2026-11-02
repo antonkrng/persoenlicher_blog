@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reiseberichtes on My New Hugo Site</title>
-    <link>https://example.org/reiseberichte/</link>
+    <link>http://localhost:1313/persoenlicher_blog/reiseberichte/</link>
     <description>Recent content in Reiseberichtes on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Oct 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/reiseberichte/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/persoenlicher_blog/reiseberichte/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ein Tag in Dresden</title>
-      <link>https://example.org/reiseberichte/test/</link>
+      <title>Testbericht</title>
+      <link>http://localhost:1313/persoenlicher_blog/reiseberichte/test/</link>
       <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://example.org/reiseberichte/test/</guid>
-      <description>Ankunft Heute ging es nach Dresden. Nach der Ankunft blieb zunächst etwas Zeit, die Stadt zu erkunden.&#xA;Unterwegs Besonders schön war ein Spaziergang durch die Innenstadt. Dabei gab es einiges zu entdecken.&#xA;Fazit Ein schöner Tag mit vielen neuen Eindrücken.</description>
+      <guid>http://localhost:1313/persoenlicher_blog/reiseberichte/test/</guid>
+      <description>Testbericht Bei diesem Reisebericht handelt es sich um einen Testbericht. Hier folgen demnächst berichte über Reisen. Im November geht es nach Warschau und Budapest.&#xA;Inhalt der Berichte Ich habe vor, in meinen Berichten insbesondere auf von mir besuchte Restaurants und Second-Hand-Läden einzugehen. Darüber hinaus wird auch in einer Sektion beschrieben, wie mir die Reise im Generellen gefallen hat und was ich für weitere Unternehmungen genossen habe.&#xA;Bereits vergangene Reisen in 2026 Ich war im März 2026 in Rom, Palermo, Catania, Neapel, Bologna und Wien.</description>
     </item>
   </channel>
 </rss>

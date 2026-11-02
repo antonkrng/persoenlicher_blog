@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projektes on My New Hugo Site</title>
-    <link>https://example.org/projekte/</link>
+    <link>http://localhost:1313/persoenlicher_blog/projekte/</link>
     <description>Recent content in Projektes on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Nov 2026 15:34:03 +0100</lastBuildDate>
-    <atom:link href="https://example.org/projekte/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/persoenlicher_blog/projekte/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hauptstädte der Welt</title>
-      <link>https://example.org/projekte/hauptstaedte/</link>
+      <link>http://localhost:1313/persoenlicher_blog/projekte/hauptstaedte/</link>
       <pubDate>Mon, 02 Nov 2026 15:34:03 +0100</pubDate>
-      <guid>https://example.org/projekte/hauptstaedte/</guid>
+      <guid>http://localhost:1313/persoenlicher_blog/projekte/hauptstaedte/</guid>
       <description>Beschreibung Ich hatte schon lange vor, einmal alle Hauptstädte der Welt zu lernen. Zu diesem Zweck habe ich eine Progressive Web App erstellt, die über diesen Link abgerufen werden kann: https://antonkrng.github.io/hauptstaedte/&#xA;Das Projekt ist nicht abgeschlossen, es werden laufend Änderungen vorgenommen.</description>
     </item>
   </channel>
