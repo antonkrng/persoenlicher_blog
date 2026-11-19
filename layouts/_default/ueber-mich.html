@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }}</title>
+    {{ $css := resources.Get "css/main.css" }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    {{ partial "nav.html" . }}
+
+    <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+</body>
+</html>

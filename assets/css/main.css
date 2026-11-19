@@ -64,3 +64,59 @@ article h3 {
 article h3 {
     margin-top: 0;
 }
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    background-color: #e8e2d5;
+    padding: 8px;
+    border-radius: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #183b56;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f5f1e8;
+    min-width: 180px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 5px 0;
+    transform: translateY(-5px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-content a:hover {
+    background-color: #e8e2d5;
+    color: #2563eb;
+}

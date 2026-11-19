@@ -1,0 +1,32 @@
+<nav>
+    <a href="/">Startseite</a>
+
+    <div class="dropdown">
+        <a href="#">Reiseberichte ▾</a>
+        <div class="dropdown-content">
+            {{ range where .Site.RegularPages "Section" "reiseberichte" }}
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ end }}
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">Projekte ▾</a>
+        <div class="dropdown-content">
+            {{ range where .Site.RegularPages "Section" "projekte" }}
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ end }}
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">Sonstiges ▾</a>
+        <div class="dropdown-content">
+            {{ range where .Site.RegularPages "Section" "sonstiges" }}
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ end }}
+        </div>
+    </div>
+
+    <a href="/ueber-mich/">Über Mich</a>
+</nav>
