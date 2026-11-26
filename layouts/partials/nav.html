@@ -2,7 +2,7 @@
     <a href="/">Startseite</a>
 
     <div class="dropdown">
-        <a href="javascript:void(0)">Reiseberichte ▾</a>
+        <button class="dropdown-toggle">Reiseberichte ▾</button>
         <div class="dropdown-content">
             {{ range where .Site.RegularPages "Section" "reiseberichte" }}
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
@@ -11,7 +11,7 @@
     </div>
 
     <div class="dropdown">
-        <a href="javascript:void(0)">Projekte ▾</a>
+        <button class="dropdown-toggle">Projekte ▾</button>
         <div class="dropdown-content">
             {{ range where .Site.RegularPages "Section" "projekte" }}
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
@@ -20,7 +20,7 @@
     </div>
 
     <div class="dropdown">
-        <a href="javascript:void(0)">Sonstiges ▾</a>
+        <button class="dropdown-toggle">Sonstiges ▾</button>
         <div class="dropdown-content">
             {{ range where .Site.RegularPages "Section" "sonstiges" }}
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>

@@ -85,6 +85,16 @@ nav a {
     padding: 10px 15px;
 }
 
+.dropdown-toggle {
+    color: #183b56;
+    background: none;
+    border: none;
+    font: inherit;
+    font-weight: 800;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
 nav a:hover {
     color: #2563eb;
 }
@@ -134,10 +144,14 @@ nav a:hover {
     }
    .dropdown-content {
        position: static;
-       visibility: visible;
-       opacity: 1;
+       visibility: hidden;
+       opacity: 0;
        transform: none;
        background-color: #e8e2d5;
        box-shadow: none;
-    }
+   }
+   .dropdown-content.open {
+       visibility: visible;
+       opacity: 1;
+   }
 }

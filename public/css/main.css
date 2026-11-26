@@ -73,6 +73,9 @@ nav {
     background-color: #e8e2d5;
     padding: 8px;
     border-radius: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -80,6 +83,16 @@ nav a {
     text-decoration: none;
     font-weight: 800;
     padding: 10px 15px;
+}
+
+.dropdown-toggle {
+    color: #183b56;
+    background: none;
+    border: none;
+    font: inherit;
+    font-weight: 800;
+    padding: 10px 15px;
+    cursor: pointer;
 }
 
 nav a:hover {
@@ -94,7 +107,7 @@ nav a:hover {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #f5f1e8;
+    background-color: #e8e2d5;
     min-width: 180px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     padding: 5px 0;
@@ -116,4 +129,29 @@ nav a:hover {
 .dropdown-content a:hover {
     background-color: #e8e2d5;
     color: #2563eb;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 5px;
+        padding: 8px;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 10px 12px;
+    }
+   .dropdown-content {
+       position: static;
+       visibility: hidden;
+       opacity: 0;
+       transform: none;
+       background-color: #e8e2d5;
+       box-shadow: none;
+   }
+   .dropdown-content.open {
+       visibility: visible;
+       opacity: 1;
+   }
 }
