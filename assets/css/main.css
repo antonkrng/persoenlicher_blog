@@ -133,12 +133,11 @@ nav a:hover {
         padding: 10px 12px;
     }
    .dropdown-content {
-       background-color: #e8e2d5;
-       opacity: 1;
-    }
-    .dropdown:active .dropdown-content {
+       position: static;
        visibility: visible;
        opacity: 1;
-       transform: translateY(0);
+       transform: none;
+       background-color: #e8e2d5;
+       box-shadow: none;
     }
 }
