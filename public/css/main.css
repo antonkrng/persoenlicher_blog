@@ -154,7 +154,7 @@ nav a:hover {
 
     .dropdown-content {
         position: static;
-        visibility: hidden;
+        display: none;
         opacity: 0;
         transform: none;
         background-color: #e8e2d5;
@@ -163,7 +163,7 @@ nav a:hover {
     }
 
     .dropdown-content.open {
-        visibility: visible;
+        display: block;
         opacity: 1;
     }
 }
