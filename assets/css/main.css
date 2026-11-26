@@ -135,6 +135,10 @@ nav a:hover {
    .dropdown-content {
        background-color: #e8e2d5;
        opacity: 1;
-}
-
+    }
+    .dropdown:active .dropdown-content {
+       visibility: visible;
+       opacity: 1;
+       transform: translateY(0);
+    }
 }
