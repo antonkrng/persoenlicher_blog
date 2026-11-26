@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/ueber-mich/</loc>
+    <loc>https://anton-koering.de/ueber-mich/</loc>
     <lastmod>2026-11-19T14:53:15+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projekte/hauptstaedte/</loc>
+    <loc>https://anton-koering.de/projekte/hauptstaedte/</loc>
     <lastmod>2026-11-02T15:34:03+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projekte/</loc>
+    <loc>https://anton-koering.de/projekte/</loc>
     <lastmod>2026-11-02T15:34:03+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://anton-koering.de/</loc>
     <lastmod>2026-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/reiseberichte/</loc>
+    <loc>https://anton-koering.de/reiseberichte/</loc>
     <lastmod>2026-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/reiseberichte/test/</loc>
+    <loc>https://anton-koering.de/reiseberichte/test/</loc>
     <lastmod>2026-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://anton-koering.de/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://anton-koering.de/tags/</loc>
   </url>
 </urlset>
