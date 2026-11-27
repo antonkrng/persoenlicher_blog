@@ -6,7 +6,6 @@
     <title>{{ .Title }}</title>
     {{ $css := resources.Get "css/main.css" }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,6 +15,7 @@
 
     {{ .Content }}
 
+{{ partial "footer.html" . }}
 {{ partial "scripts.html" . }}
 </body>
 </html>

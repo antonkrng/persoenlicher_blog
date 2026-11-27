@@ -6,7 +6,6 @@
     <title>{{ .Title }}</title>
     {{ $css := resources.Get "css/main.css" }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
     {{ partial "nav.html" . }}
@@ -14,11 +13,14 @@
     <h1>{{ .Title }}</h1>
 
 
-    <p>{{ .Date.Format "02.01.2006" }}</p>
+    {{ if ne .RelPermalink "/datenschutz/" }}
+       <p>{{ .Date.Format "02.01.2006" }}</p>
+    {{ end }}
 
     {{ .Content }}
 
     <p><a href="/">Zurück zur Startseite</a></p>
+{{ partial "footer.html" . }}
 {{ partial "scripts.html" . }}
 </body>
 </html>

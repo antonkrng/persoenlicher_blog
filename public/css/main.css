@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat[wght].ttf") format("truetype");
+    font-weight: 100 900;
+}
+
 body {
     max-width: 800px;
     margin: 50px auto;
@@ -166,4 +172,27 @@ nav a:hover {
         display: block;
         opacity: 1;
     }
+
+    footer a {
+        display: block;
+        margin: 8px 0;
+    }
+}
+
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e8e2d5;
+}
+
+footer a {
+    color: #183b56;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #2563eb;
 }
