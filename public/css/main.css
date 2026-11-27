@@ -189,7 +189,7 @@ nav a:hover {
     }
 
      h1 {
-        overflow-wrap: break-word;
+        overflow-wrap: anywhere;
     }
 }
 
